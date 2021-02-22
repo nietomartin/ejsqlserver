@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <table class="table mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre de la herramienta</th>
+            <th scope="col">Cantidad</th>
+            <th>Editar</th>            
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in data %}
+          <tr>
+            <td>{{item.Id}}</td>
+            <td>{{item.code}}</td>
+            <td>{{item.nombre}}</td>
+            <td>{{item.cantidad}}</td>              
+            <td><a href="./edit?id={{item.Id}}" class="btn btn-primary">Editar</a></td>              
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+</div>
+{% endblock %}

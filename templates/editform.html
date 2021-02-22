@@ -1,0 +1,32 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container" >
+
+  <form action="./edit"  method="post" enctype='multipart/form-data' class="mt-5">
+    {% for item in data %}
+      <div class="form-group">
+        <label for="Id">Ido: </label>
+        <input type="text" class="form-control" name="Id" id="Id" value="{{item.Id}}">
+      </div>
+      <div class="form-group">
+          <label for="Id">Codigo: </label>
+        <input type="text" class="form-control" name="code" id="code" value="{{item.code}}">
+      </div>
+      <div class="form-group">
+        <label for="Password">Nombre de la herramienta: </label>
+        <input type="text" class="form-control" name="nombre" id="nombre" value="{{item.nombre}}">
+      </div>
+      <div class="form-group">
+        <label for="cantidad">Cantidad: </label>
+        <input type="text" class="form-control" name="cantidad" id="cantidad" value="{{item.cantidad}}">
+      </div>
+      <button type="submit" class="btn btn-primary"><i class="fa fa-save mr-1"></i>Actualizar</button>
+      {% endfor %}
+    </form>
+  
+  <div class="row mt-5">
+    <div class="col-12">      
+    </div>
+  </div>
+</div>
+{% endblock %}

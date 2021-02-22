@@ -1,0 +1,18 @@
+Microsoft ODBC Driver for SQL Server Version 17.07.0001
+
+Data Source Name: acceso_BD_local_bodega
+Data Source Description: acceso_BD_local_bodega
+Server: DESKTOP-1P539GB\SQLEXPRESS
+Use Integrated Security: No
+Database: bodega
+Language: Spanish
+Data Encryption: No
+Trust Server Certificate: No
+Multiple Active Result Sets(MARS): No
+Mirror Server: 
+Translate Character Data: Yes
+Log Long Running Queries: No
+Log Driver Statistics: No
+Use Regional Settings: No
+Use ANSI Quoted Identifiers: Yes
+Use ANSI Null, Paddings and Warnings: Yes
